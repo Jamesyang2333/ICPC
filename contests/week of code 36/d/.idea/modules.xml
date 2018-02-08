@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/symmetric tree.iml" filepath="$PROJECT_DIR$/symmetric tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/d.iml" filepath="$PROJECT_DIR$/d.iml" />
     </modules>
   </component>
 </project>
