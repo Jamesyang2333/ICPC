@@ -71,14 +71,14 @@ public class Solution {
                 }
             }
         }
-        if(rowrook == true){
+        if(rowrook){
             return true;
         }
         else{
             if(kingy == rooky){
                 boolean filerook = true;
                 for(int i = Math.min(kingx, rookx) + 1; i < Math.max(kingx, rookx); i++){
-                    if(board[i][kingy] == '#'){
+                    if(board[i][kingy] != '#'){
                         filerook = false;
                         break;
                     }
