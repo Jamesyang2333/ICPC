@@ -24,6 +24,7 @@ public class Solution {
                         pawnpos = j;
                     }
                 }
+
                 if(board[i][j] == 'Q')
                     queens.add(new int[]{i, j});
                 if(board[i][j] == 'R')
@@ -93,6 +94,7 @@ public class Solution {
     private static boolean bishopcheck(int bisx, int bisy, int kingx, int kingy, char[][] board){
         if(Math.abs(kingx - bisx) == Math.abs(kingy - bisy)){
             boolean canbebishop = true;
+            int inibisx = bisx;
             int incx = 1;
             int incy = 1;
             if(kingx < bisx)
@@ -101,7 +103,7 @@ public class Solution {
                 incy = -1;
             bisx += (incx);
             bisy += (incy);
-            for(int i = 0; i < Math.abs(kingx - bisx) - 1; i++){
+            for(int i = 0; i < Math.abs(kingx - inibisx) - 1; i++){
                 if(board[bisx][bisy] != '#'){
                     canbebishop = false;
                     break;
