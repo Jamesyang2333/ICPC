@@ -1,3 +1,4 @@
+//The reversepostorder function is false in general. It's only true in this special case where every node has exacly one child.
 import java.util.Stack;
 import java.io.BufferedReader;
 import java.io.IOException;
