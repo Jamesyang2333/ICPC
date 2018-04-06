@@ -69,13 +69,13 @@ public class Solution {
             cites.add(current);
         marked[current] = true;
         for(int next : adj[current]){
-            if(!marked[current])
+            if(!marked[next])
                 states.push(next);
         }
         }
         int len = cites.size();
         for(int i = len - 1; i >= 0; i--){
-        result.push(v);
+        result.push(cites.get(i));
         }
     }
 }
